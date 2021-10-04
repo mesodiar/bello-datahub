@@ -1,2 +1,6 @@
 acryl-datahub
+acryl-datahub[bigquery]
+acryl-datahub[mysql]
+acryl-datahub[datahub-rest]
+google-cloud-bigquery-storage
 
