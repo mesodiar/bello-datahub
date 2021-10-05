@@ -1,4 +1,5 @@
 acryl-datahub
+acryl-datahub[airflow]
 acryl-datahub[bigquery]
 acryl-datahub[mysql]
 acryl-datahub[datahub-rest]

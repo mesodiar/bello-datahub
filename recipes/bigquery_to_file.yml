@@ -8,7 +8,7 @@ source:
     table_pattern:
       allow:
       # Allow anything that starts with "covid19"
-      - "bigquery-public-data\\.covid19_italy.*"
+      - "bigquery-public-data\\.hacker_news.*"
       deny:
       # Except for tables that end with an underscore.
       - ".*_\$" # also escapes the variable expansion on $
