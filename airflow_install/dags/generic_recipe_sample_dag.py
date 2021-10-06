@@ -34,7 +34,7 @@ default_args = {
 
 
 def datahub_recipe():
-    config = load_config_file(f"./mysql_to_datahub.yml")
+    config = load_config_file(f"/opt/airflow/dags/mysql_to_datahub.yml")
 
     pipeline = Pipeline.create(config)
     pipeline.run()
