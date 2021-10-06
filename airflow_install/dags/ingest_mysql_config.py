@@ -39,12 +39,12 @@ def ingest_from_mysql():
                     "username": "datahub",
                     "password": "datahub",
                     "database": "datahub",
-                    "host_port": "http://34.87.57.73:3306",
+                    "host_port": "http://datahub-gms:3306",
                 },
             },
             "sink": {
                 "type": "datahub-rest",
-                "config": {"server": "http://34.87.57.73:8080"},
+                "config": {"server": "http://datahub-gms:8080"},
             },
         }
     )
