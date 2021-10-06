@@ -39,7 +39,7 @@ def ingest_from_mysql():
                     "username": "datahub",
                     "password": "datahub",
                     "database": "datahub",
-                    "host_port": "http://mysql:3306",
+                    "host_port": "mysql:3306",
                 },
             },
             "sink": {
