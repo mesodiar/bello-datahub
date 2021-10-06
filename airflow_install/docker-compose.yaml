@@ -114,8 +114,6 @@ services:
       timeout: 10s
       retries: 5
     restart: always
-    volumes:
-      - ../recipes:/opt/airflow/recipes
 
   airflow-scheduler:
     <<: *airflow-common
