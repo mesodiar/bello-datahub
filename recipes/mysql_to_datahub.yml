@@ -12,4 +12,4 @@ source:
 sink:
   type: "datahub-rest"
   config:
-    server: 'http://34.87.57.73/:8080'
+    server: 'http://datahub-gms:8080'
