@@ -29,9 +29,11 @@ default_args = {
     "execution_timeout": timedelta(minutes=120),
 }
 
+recipe_path = Variable.get("recipe_path")
+
 
 def datahub_recipe():
-    config = load_config_file("path/to/recipe.yml")
+    config = load_config_file(f"{recipe_path}/mysql_to_datahub.yml")
 
     pipeline = Pipeline.create(config)
     pipeline.run()
