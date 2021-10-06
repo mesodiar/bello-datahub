@@ -2,7 +2,7 @@ source:
   type: mysql
   config:
     # Coordinates
-    host_port: localhost:3306
+    host_port: mysql:3306
     database: datahub
 
     # Credentials
@@ -12,4 +12,4 @@ source:
 sink:
   type: "datahub-rest"
   config:
-    server: 'http://localhost:8080'
+    server: 'mysql:8080'
