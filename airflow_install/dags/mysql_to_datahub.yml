@@ -1,0 +1,15 @@
+source:
+  type: mysql
+  config:
+    # Coordinates
+    host_port: localhost:3306
+    database: datahub
+
+    # Credentials
+    username: datahub
+    password: datahub
+    
+sink:
+  type: "datahub-rest"
+  config:
+    server: 'http://localhost:8080'
