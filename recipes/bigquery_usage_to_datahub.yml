@@ -6,7 +6,7 @@ source:
 
     # Options
     top_n_queries: 10
-    options:
+    extra_client_options	:
       credentials_path: "./thanos-dev-e7af50a8f2b2.json"
     env: "DEV"
 sink:
