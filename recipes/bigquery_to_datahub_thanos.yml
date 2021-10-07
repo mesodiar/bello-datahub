@@ -7,7 +7,7 @@ source:
       credentials_path: "./thanos-dev-e7af50a8f2b2.json"
     table_pattern:
       allow:
-      - "thanos-dev\\.*"
+      - "thanos-dev.*"
       deny:
       # Except for tables that end with an underscore.
       - ".*_\$" # also escapes the variable expansion on $
