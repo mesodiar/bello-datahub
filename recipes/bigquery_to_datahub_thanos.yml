@@ -4,13 +4,7 @@ source:
   config:
     project_id: "thanos-dev"
     options:
-      credentials_path: "./thanos-dev-e7af50a8f2b2.json"
-    table_pattern:
-      allow:
-      - "thanos-dev.*"
-      deny:
-      # Except for tables that end with an underscore.
-      - ".*_\$" # also escapes the variable expansion on $
+      credentials_path: "./thanos-dev-3acb7ffa010a.json"
     env: "DEV"
 
 sink:
