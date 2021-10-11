@@ -25,7 +25,7 @@ default_args = {
 
 
 with DAG(
-    "datahub_lineage_backend_demo",
+    "demo_lineage_backend_demo",
     default_args=default_args,
     description="An example DAG demonstrating the usage of DataHub's Airflow lineage backend.",
     schedule_interval=timedelta(days=1),

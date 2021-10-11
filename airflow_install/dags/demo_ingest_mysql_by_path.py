@@ -42,7 +42,7 @@ def datahub_recipe():
 
 
 with DAG(
-    "datahub_ingest_using_recipe",
+    "demo_ingest_mysql_by_path",
     default_args=default_args,
     description="An example DAG which runs a DataHub ingestion recipe",
     schedule_interval=timedelta(days=1),

@@ -53,7 +53,7 @@ def ingest_from_mysql():
 
 
 with DAG(
-    "datahub_mysql_ingest",
+    "demo_ingest_mysql_by_config",
     default_args=default_args,
     description="An example DAG which ingests metadata from MySQL to DataHub",
     schedule_interval=timedelta(days=1),
