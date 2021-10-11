@@ -1,0 +1,15 @@
+source:
+  type: bigquery-usage
+  config:
+    projects:
+      - "thanos-dev"
+
+    # Options
+    top_n_queries: 10
+    extra_client_options	:
+      credentials_path: "./thanos-dev-e7af50a8f2b2.json"
+    env: "DEV"
+sink:
+  type: "datahub-rest"
+  config:
+    server: 'http://localhost:8080'

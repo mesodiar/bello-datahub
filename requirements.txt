@@ -1,6 +1,7 @@
 acryl-datahub
 acryl-datahub[airflow]
 acryl-datahub[bigquery]
+acryl-datahub[bigquery-usage]
 acryl-datahub[mysql]
 acryl-datahub[datahub-rest]
 google-cloud-bigquery-storage
