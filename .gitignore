@@ -1,3 +1,5 @@
+airflow_install/logs/*
+
 # Airflow configuration
 airflow.cfg
 unittests.cfg
