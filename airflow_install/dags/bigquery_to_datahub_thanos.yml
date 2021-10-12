@@ -4,10 +4,10 @@ source:
   config:
     project_id: "thanos-dev"
     options:
-      credentials_path: "./thanos-dev-3acb7ffa010a.json"
+      credentials_path: "/opt/airflow/dags/thanos-dev-3acb7ffa010a.json"
     env: "DEV"
 
 sink:
   type: "datahub-rest"
   config:
-    server: 'http://datahub-gms:8080'
+    server: 'http://34.126.143.4:8080'

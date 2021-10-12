@@ -34,7 +34,7 @@ default_args = {
 
 
 def datahub_recipe():
-    config = load_config_file(f"/opt/recipes/bigquery_to_datahub_thanos.yml")
+    config = load_config_file(f"/opt/airflow/dags/bigquery_to_datahub_thanos.yml")
 
     pipeline = Pipeline.create(config)
     pipeline.run()

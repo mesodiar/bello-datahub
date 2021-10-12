@@ -1,4 +1,0 @@
-services:
-  airflow-webserver:
-    volumes:
-        - '../recipes:/recipes'
