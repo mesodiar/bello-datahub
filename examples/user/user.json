@@ -1,0 +1,64 @@
+[
+  {
+    "auditHeader": null,
+    "proposedSnapshot": {
+      "com.linkedin.pegasus2avro.metadata.snapshot.CorpUserSnapshot": {
+        "urn": "urn:li:corpuser:burasakorn.sabyeying",
+        "aspects": [
+          {
+            "com.linkedin.pegasus2avro.identity.CorpUserInfo": {
+              "active": true,
+              "displayName": {
+                "string": "Burasakorn Sabyeying"
+              },
+              "email": "mils.meso@gmail.com",
+              "title": {
+                "string": "Data Engineer"
+              },
+              "managerUrn": null,
+              "departmentId": null,
+              "departmentName": null,
+              "firstName": null,
+              "lastName": null,
+              "fullName": {
+                "string": "Burasakorn Sabyeying"
+              },
+              "countryCode": null
+            }
+          }
+        ]
+      }
+    }
+  },
+  {
+    "auditHeader": null,
+    "proposedSnapshot": {
+      "com.linkedin.pegasus2avro.metadata.snapshot.CorpUserSnapshot": {
+        "urn": "urn:li:corpuser:tako.yaki",
+        "aspects": [
+          {
+            "com.linkedin.pegasus2avro.identity.CorpUserInfo": {
+              "active": true,
+              "displayName": {
+                "string": "Tako Yaki"
+              },
+              "email": "tako.yaki@email.co.th",
+              "title": {
+                "string": "Data Scientist"
+              },
+              "managerUrn": null,
+              "departmentId": null,
+              "departmentName": null,
+              "firstName": null,
+              "lastName": null,
+              "fullName": {
+                "string": "Tako Yaki"
+              },
+              "countryCode": null
+            }
+          }
+        ]
+      }
+    }
+  }
+]
