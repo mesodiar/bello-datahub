@@ -1,8 +1,2 @@
-acryl-datahub
-acryl-datahub[airflow]
-acryl-datahub[bigquery]
-acryl-datahub[bigquery-usage]
-acryl-datahub[mysql]
-acryl-datahub[datahub-rest]
-google-cloud-bigquery-storage
-
+acryl-datahub[airflow,bigquery,mysql,datahub-rest]==0.8.15.0
+google-cloud-bigquery-storage==2.9.0
