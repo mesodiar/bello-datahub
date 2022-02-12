@@ -5,15 +5,7 @@ source:
     project_id: "bigquery-public-data"
     options:
       credentials_path: "./data-platform-dev-333007-4a4396aa0e94.json"
-    env: "DEV"
-    table_pattern:
-      allow:
-      # Allow anything that starts with "chicago"
-      - "bigquery-public-data\\.chicago.*"
-      deny:
-      # Except for tables that end with an underscore.
-      - ".*_\$" # also escapes the variable expansion on $
-
+    env: "dev"
 
 sink:
   type: "datahub-rest"

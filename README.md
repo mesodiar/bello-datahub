@@ -7,9 +7,5 @@ datahub docker quickstart --quickstart-compose-file ./docker-compose-without-neo
 Ingest dataset from BigQuery into Local file
 
 ```
-datahub ingest -c  recipes/bigquery_to_file.yml
-```
-
-```
-datahub ingest -c recipes/file_to_datahub.yml
+datahub ingest -c  recipes/bigquery_public_to_datahub.yml
 ```
