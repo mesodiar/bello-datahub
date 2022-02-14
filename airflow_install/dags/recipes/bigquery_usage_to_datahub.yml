@@ -2,7 +2,7 @@ source:
   type: bigquery-usage
   config:
     projects:
-      - "thanos-dev"
+      - "<<my-project-id>"
 
     # Options
     top_n_queries: 10
