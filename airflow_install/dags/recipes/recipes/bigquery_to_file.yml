@@ -4,7 +4,7 @@ source:
   config:
     project_id: "bigquery-public-data"
     options:
-      credentials_path: "./thanos-dev-e7af50a8f2b2.json"
+      credentials_path: "/opt/airflow/dags/<secret_json_key>.json"
     table_pattern:
       allow:
       # Allow anything that starts with "covid19"

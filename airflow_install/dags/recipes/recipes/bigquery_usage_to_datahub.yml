@@ -6,10 +6,10 @@ source:
 
     # Options
     top_n_queries: 10
-    extra_client_options	:
-      credentials_path: "./thanos-dev-e7af50a8f2b2.json"
+    extra_client_options:
+      credentials_path: "/opt/airflow/dags/<secret_json_key>.json"
     env: "DEV"
 sink:
   type: "datahub-rest"
   config:
-    server: 'http://localhost:8080'
+    server: "http://localhost:8080"
