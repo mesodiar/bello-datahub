@@ -15,7 +15,6 @@ except ModuleNotFoundError:
     from airflow.operators.python_operator import PythonOperator
 
 from airflow.utils.dates import days_ago
-
 from datahub.configuration.config_loader import load_config_file
 from datahub.ingestion.run.pipeline import Pipeline
 
@@ -34,7 +33,7 @@ default_args = {
 
 
 def datahub_recipe():
-    config = load_config_file(f"/opt/airflow/dags/recipes/bigquery_to_datahub_thanos.yml")
+    config = load_config_file(f"/opt/airflow/dags/recipes/bigquery_public_to_datahub.yml")
 
     pipeline = Pipeline.create(config)
     pipeline.run()

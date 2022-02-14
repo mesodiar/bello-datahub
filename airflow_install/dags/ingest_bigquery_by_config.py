@@ -8,9 +8,8 @@ embedded within the code.
 from datetime import timedelta
 
 from airflow import DAG
-from airflow.utils.dates import days_ago
 from airflow.models import Variable
-
+from airflow.utils.dates import days_ago
 
 try:
     from airflow.operators.python import PythonOperator
@@ -31,7 +30,7 @@ default_args = {
 }
 
 
-bigquery_thanos_dev = Variable.get("bigquery_thanos_dev_secret")
+bigquery_my_project_secret = Variable.get("bigquery_my_project_secret")
 datahub_gms_ip = Variable.get("datahub-gms-ip")
 
 
@@ -42,9 +41,9 @@ def ingest_from_mysql():
             "source": {
                 "type": "bigquery",
                 "config": {
-                    "project_id": "thanos-dev",
+                    "project_id": "<my-project-id>",
                     "options": {
-                        "credentials_path": bigquery_thanos_dev
+                        "credentials_path": bigquery_my_project_secret
                     },
                     "env": "DEV"
                 },

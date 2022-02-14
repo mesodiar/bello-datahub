@@ -2,12 +2,13 @@
 source:
   type: bigquery
   config:
-    project_id: "thanos-dev"
+    project_id: "<my-project-id>"
     options:
-      credentials_path: "/opt/airflow/dags/thanos-dev-3acb7ffa010a.json"
+      credentials_path: "/opt/airflow/dags/<secret_json_key>.json"
     env: "DEV"
 
 sink:
   type: "datahub-rest"
   config:
-    server: 'http://34.126.143.4:8080'
+    # server: 'http://<some-ip>:8080'
+    server: "http://localhost:8080"

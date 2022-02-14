@@ -15,7 +15,6 @@ except ModuleNotFoundError:
     from airflow.operators.python_operator import PythonOperator
 
 from airflow.utils.dates import days_ago
-
 from datahub.configuration.config_loader import load_config_file
 from datahub.ingestion.run.pipeline import Pipeline
 
